@@ -70,7 +70,7 @@
         /// <summary>
         /// Calculates the Hamming Distance between two numbers.
         /// </summary>
-        public static int HammingDistance(ulong n1, ulong n2)
+        public static int ComputeHammingDistance(ulong n1, ulong n2)
         {
             int distance = 0;
 
@@ -94,9 +94,9 @@
         /// Hamming Distance. The higher the percentage
         /// the closer the hashes are to being identical.
         /// </summary>
-        public static double Similarity(ulong hash1, ulong hash2)
+        public static double ComputeSimilarity(ulong hash1, ulong hash2)
         {
-            return ((64 - HammingDistance(hash1, hash2)) * (1.0 / 64));
+            return ((64 - ComputeHammingDistance(hash1, hash2)) * (1.0 / 64));
         }
 
         /// <summary>
