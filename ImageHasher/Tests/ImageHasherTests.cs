@@ -87,24 +87,5 @@
             Assert.That(similarityBB, Is.EqualTo(1.0));
             Assert.That(similarityBC, Is.InRange<double>(0.95, 1.0));
         }
-
-        /*
-        [Test]
-        public void TestReduceAndGrayscaleImage()
-        {
-            Bitmap color = ImageUtils.ReduceImage(TestImage, 9, 8);
-            string colorPath = IOUtils.MapServerPath("~/Tests/Images/Alyson-9x8-Color.jpg");
-
-            color.Save(colorPath, ImageFormat.Jpeg);
-
-            Bitmap gray = ImageUtils.GrayscaleImage(color);
-            string grayPath = IOUtils.MapServerPath("~/Tests/Images/Alyson-9x8-Gray.jpg");
-
-            gray.Save(grayPath, ImageFormat.Jpeg);
-
-            color.Dispose();
-            gray.Dispose();
-        }
-        */
     }
 }
