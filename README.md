@@ -1,7 +1,7 @@
 ImageHasher
 ===========
 
-Implementation of the Average and Difference Hash algorithm for images.
+A tiny and tested library for hashing images and comparing those hashes for similiarity.
 
-http://hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html
+http://hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html  
 http://hackerfactor.com/blog/index.php?archives/529-Kind-of-Like-That.html
