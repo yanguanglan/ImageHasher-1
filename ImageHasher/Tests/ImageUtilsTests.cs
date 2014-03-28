@@ -72,11 +72,5 @@
             Assert.That(similarity, Is.EqualTo(1.0));
             Assert.That(distance, Is.EqualTo(0));
         }
-
-        [Test]
-        public void GetGrayscaleBytes()
-        {
-            //
-        }
     }
 }
