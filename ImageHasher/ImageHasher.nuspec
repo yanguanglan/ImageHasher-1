@@ -11,6 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
+1.0.1 - Move NUnit tests into a new project
 1.0.0 - Initial release see https://github.com/raysohn/ImageHasher
     </releaseNotes>
     <copyright>Copyright 2014</copyright>
