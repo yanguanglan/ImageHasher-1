@@ -11,3 +11,5 @@ This package is available on NuGet: https://nuget.org/packages/ImageHasher
 ```
 PM> Install-Package ImageHasher
 ```
+
+Usage: https://github.com/raysohn/ImageHasher/tree/master/ImageHasher.Example
