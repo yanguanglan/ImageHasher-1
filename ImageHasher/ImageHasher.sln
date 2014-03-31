@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHasher", "ImageHasher.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHasher.Tests", "..\ImageHasher.Tests\ImageHasher.Tests.csproj", "{AAD521E1-8D73-4003-92C2-24C3918539FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHasher.Example", "..\ImageHasher.Example\ImageHasher.Example.csproj", "{B28C9EBA-FDBC-410B-A205-0BD6503A74DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28C9EBA-FDBC-410B-A205-0BD6503A74DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28C9EBA-FDBC-410B-A205-0BD6503A74DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28C9EBA-FDBC-410B-A205-0BD6503A74DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28C9EBA-FDBC-410B-A205-0BD6503A74DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
