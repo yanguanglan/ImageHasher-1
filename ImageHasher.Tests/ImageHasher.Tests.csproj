@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImageHasher">
+      <HintPath>..\ImageHasher\packages\ImageHasher.1.0.2.0\lib\net45\ImageHasher.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\ImageHasher\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -57,12 +60,6 @@
     <Content Include="Images\Alyson-9x8-Gray-Generated.jpg" />
     <Content Include="Images\Alyson-9x8-Gray.jpg" />
     <Content Include="Images\Alyson.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ImageHasher\ImageHasher.csproj">
-      <Project>{5c0e09ed-d4a6-4e40-b589-e8594bf4f919}</Project>
-      <Name>ImageHasher</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
