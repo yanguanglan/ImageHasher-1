@@ -6,16 +6,14 @@
 
     using NUnit.Framework;
 
-    using Common;
-
     [TestFixture]
     public class ImageUtilsTests
     {
         public static Image ImageFullSize = Image.FromFile(IOUtils.MapServerPath(
-            "~/Tests/Images/Alyson.jpg"));
+            "~/Images/Alyson.jpg"));
 
         public static Image ImageGrayscale = Image.FromFile(IOUtils.MapServerPath(
-            "~/Tests/Images/Alyson-9x8-Gray.jpg"));
+            "~/Images/Alyson-9x8-Gray.jpg"));
 
         [Test]
         public void ReduceImage()
@@ -23,15 +21,15 @@
             using (var image = ImageUtils.ReduceImage(ImageFullSize, 9, 8))
             {
                 image.Save(
-                    IOUtils.MapServerPath("~/Tests/Images/Alyson-9x8-Color-Generated.jpg"),
+                    IOUtils.MapServerPath("~/Images/Alyson-9x8-Color-Generated.jpg"),
                     ImageFormat.Jpeg);
             }
 
             Image reducedImage = Image.FromFile(IOUtils.MapServerPath(
-                "~/Tests/Images/Alyson-9x8-Color-Generated.jpg"));
+                "~/Images/Alyson-9x8-Color-Generated.jpg"));
 
             Image expectedImage = Image.FromFile(IOUtils.MapServerPath(
-                "~/Tests/Images/Alyson-9x8-Color.jpg"));
+                "~/Images/Alyson-9x8-Color.jpg"));
 
             ulong reducedImageHash = ImageHasher.ComputeDifferenceHash(reducedImage);
             ulong expectedImageHash = ImageHasher.ComputeDifferenceHash(expectedImage);
@@ -51,15 +49,15 @@
             using (var image = ImageUtils.GrayscaleImage(ImageUtils.ReduceImage(ImageFullSize, 9, 8)))
             {
                 image.Save(
-                    IOUtils.MapServerPath("~/Tests/Images/Alyson-9x8-Gray-Generated.jpg"),
+                    IOUtils.MapServerPath("~/Images/Alyson-9x8-Gray-Generated.jpg"),
                     ImageFormat.Jpeg);
             }
 
             Image grayscaleImage = Image.FromFile(IOUtils.MapServerPath(
-                "~/Tests/Images/Alyson-9x8-Gray-Generated.jpg"));
+                "~/Images/Alyson-9x8-Gray-Generated.jpg"));
 
             Image expectedImage = Image.FromFile(IOUtils.MapServerPath(
-                "~/Tests/Images/Alyson-9x8-Gray.jpg"));
+                "~/Images/Alyson-9x8-Gray.jpg"));
 
             ulong grayscaleImageHash = ImageHasher.ComputeDifferenceHash(grayscaleImage);
             ulong expectedImageHash = ImageHasher.ComputeDifferenceHash(expectedImage);

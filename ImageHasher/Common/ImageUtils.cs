@@ -1,4 +1,4 @@
-﻿namespace ImageHasher.Common
+﻿namespace ImageHasher
 {
     using System;
     using System.Drawing;

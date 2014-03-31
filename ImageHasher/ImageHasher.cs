@@ -5,8 +5,6 @@
     using System.Drawing.Imaging;
     using System.Drawing.Drawing2D;
 
-    using Common;
-
     /// <summary>
     /// A static class to handle hashing images
     /// </summary>

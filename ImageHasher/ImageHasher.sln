@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHasher", "ImageHasher.csproj", "{5C0E09ED-D4A6-4E40-B589-E8594BF4F919}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHasher.Tests", "..\ImageHasher.Tests\ImageHasher.Tests.csproj", "{AAD521E1-8D73-4003-92C2-24C3918539FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{5C0E09ED-D4A6-4E40-B589-E8594BF4F919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C0E09ED-D4A6-4E40-B589-E8594BF4F919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C0E09ED-D4A6-4E40-B589-E8594BF4F919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD521E1-8D73-4003-92C2-24C3918539FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

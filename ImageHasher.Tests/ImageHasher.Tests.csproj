@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C0E09ED-D4A6-4E40-B589-E8594BF4F919}</ProjectGuid>
+    <ProjectGuid>{AAD521E1-8D73-4003-92C2-24C3918539FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImageHasher</RootNamespace>
-    <AssemblyName>ImageHasher</AssemblyName>
+    <RootNamespace>ImageHasher.Tests</RootNamespace>
+    <AssemblyName>ImageHasher.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\ImageHasher\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -40,15 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\ImageUtils.cs" />
-    <Compile Include="ImageHasher.cs" />
+    <Compile Include="Common\IOUtils.cs" />
+    <Compile Include="ImageHasherTests.cs" />
+    <Compile Include="ImageUtilsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ImageHasher.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Alyson-9x8-Color-Generated.jpg" />
+    <Content Include="Images\Alyson-9x8-Color.jpg" />
+    <Content Include="Images\Alyson-9x8-Gray-Generated.jpg" />
+    <Content Include="Images\Alyson-9x8-Gray.jpg" />
+    <Content Include="Images\Alyson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageHasher\ImageHasher.csproj">
+      <Project>{5c0e09ed-d4a6-4e40-b589-e8594bf4f919}</Project>
+      <Name>ImageHasher</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

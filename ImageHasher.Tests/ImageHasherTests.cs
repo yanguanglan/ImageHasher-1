@@ -6,19 +6,17 @@
 
     using NUnit.Framework;
 
-    using Common;
-
     [TestFixture]
     public class ImageHashTests
     {
         public static Image ImageA = Image.FromFile(IOUtils.MapServerPath(
-            "~/Tests/Images/Alyson.jpg"));
+            "~/Images/Alyson.jpg"));
 
         public static Image ImageB = Image.FromFile(IOUtils.MapServerPath(
-            "~/Tests/Images/Alyson-9x8-Color.jpg"));
+            "~/Images/Alyson-9x8-Color.jpg"));
 
         public static Image ImageC = Image.FromFile(IOUtils.MapServerPath(
-            "~/Tests/Images/Alyson-9x8-Gray.jpg"));
+            "~/Images/Alyson-9x8-Gray.jpg"));
 
         [Test]
         public void ComputeAverageHash()

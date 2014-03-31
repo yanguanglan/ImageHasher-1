@@ -1,4 +1,4 @@
-﻿namespace ImageHasher.Common
+﻿namespace ImageHasher.Tests
 {
     using System;
     using System.Text.RegularExpressions;
